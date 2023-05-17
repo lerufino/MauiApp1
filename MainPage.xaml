@@ -3,39 +3,32 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.MainPage">
 
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
+    <Grid RowDefinitions=".20*,.20*,.20*,.20*,.20*"
+          ColumnDefinitions=".25*,.25*,.25*,.25*"
+          Padding="10"
+          RowSpacing="10"
+          ColumnSpacing="10">
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+        <Button Grid.Column="0" HorizontalOptions="Fill" Grid.Row="0" Text="?" VerticalOptions="CenterAndExpand" FontSize="36" TextColor="WhiteSmoke" BackgroundColor="SteelBlue"/>
+        <Button Grid.Column="1" HorizontalOptions="Fill" Grid.Row="0" Text="?" VerticalOptions="CenterAndExpand" FontSize="36" TextColor="WhiteSmoke" BackgroundColor="SteelBlue"/>
+        <Button Grid.Column="2" HorizontalOptions="Fill" Grid.Row="0" Text="?" VerticalOptions="CenterAndExpand" FontSize="36" TextColor="WhiteSmoke" BackgroundColor="SteelBlue"/>
+        <Button Grid.Column="3" HorizontalOptions="Fill" Grid.Row="0" Text="?" VerticalOptions="CenterAndExpand" FontSize="36" TextColor="WhiteSmoke" BackgroundColor="SteelBlue"/>
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
+        <Button Grid.Column="0" HorizontalOptions="Fill" Grid.Row="1" Text="?" VerticalOptions="CenterAndExpand" FontSize="36" TextColor="WhiteSmoke" BackgroundColor="SteelBlue"/>
+        <Button Grid.Column="1" HorizontalOptions="Fill" Grid.Row="1" Text="?" VerticalOptions="CenterAndExpand" FontSize="36" TextColor="WhiteSmoke" BackgroundColor="SteelBlue"/>
+        <Button Grid.Column="2" HorizontalOptions="Fill" Grid.Row="1" Text="?" VerticalOptions="CenterAndExpand" FontSize="36" TextColor="WhiteSmoke" BackgroundColor="SteelBlue"/>
+        <Button Grid.Column="3" HorizontalOptions="Fill" Grid.Row="1" Text="?" VerticalOptions="CenterAndExpand" FontSize="36" TextColor="WhiteSmoke" BackgroundColor="SteelBlue"/>
+         
+        <Button Grid.Column="0" HorizontalOptions="Fill" Grid.Row="2" Text="?" VerticalOptions="CenterAndExpand" FontSize="36" TextColor="WhiteSmoke" BackgroundColor="SteelBlue"/>
+        <Button Grid.Column="1" HorizontalOptions="Fill" Grid.Row="2" Text="?" VerticalOptions="CenterAndExpand" FontSize="36" TextColor="WhiteSmoke" BackgroundColor="SteelBlue"/>
+        <Button Grid.Column="2" HorizontalOptions="Fill" Grid.Row="2" Text="?" VerticalOptions="CenterAndExpand" FontSize="36" TextColor="WhiteSmoke" BackgroundColor="SteelBlue"/>
+        <Button Grid.Column="3" HorizontalOptions="Fill" Grid.Row="2" Text="?" VerticalOptions="CenterAndExpand" FontSize="36" TextColor="WhiteSmoke" BackgroundColor="SteelBlue"/>
+         
+        <Button Grid.Column="0" HorizontalOptions="Fill" Grid.Row="3" Text="?" VerticalOptions="CenterAndExpand" FontSize="36" TextColor="WhiteSmoke" BackgroundColor="SteelBlue"/>
+        <Button Grid.Column="1" HorizontalOptions="Fill" Grid.Row="3" Text="?" VerticalOptions="CenterAndExpand" FontSize="36" TextColor="WhiteSmoke" BackgroundColor="SteelBlue"/>
+        <Button Grid.Column="2" HorizontalOptions="Fill" Grid.Row="3" Text="?" VerticalOptions="CenterAndExpand" FontSize="36" TextColor="WhiteSmoke" BackgroundColor="SteelBlue"/>
+        <Button Grid.Column="3" HorizontalOptions="Fill" Grid.Row="3" Text="?" VerticalOptions="CenterAndExpand" FontSize="36" TextColor="WhiteSmoke" BackgroundColor="SteelBlue"/>
 
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
-
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
-
-        </VerticalStackLayout>
-    </ScrollView>
-
+        <Label x:Name="timeDisplay" Grid.ColumnSpan="4"  HorizontalOptions="CenterAndExpand" Grid.Row="4" Text="????" VerticalOptions="CenterAndExpand" FontSize="36" />
+    </Grid>
 </ContentPage>
