@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.MainPage">
 
-    <Grid RowDefinitions=".20*,.20*,.20*,.20*,.20*"
+    <Grid x:Name="mainGrid"
+          RowDefinitions=".20*,.20*,.20*,.20*,.20*"
           ColumnDefinitions=".25*,.25*,.25*,.25*"
           Padding="10"
           RowSpacing="10"
@@ -29,6 +30,7 @@
         <Button Grid.Column="2" HorizontalOptions="Fill" Grid.Row="3" Text="?" VerticalOptions="CenterAndExpand" FontSize="36" TextColor="WhiteSmoke" BackgroundColor="SteelBlue"/>
         <Button Grid.Column="3" HorizontalOptions="Fill" Grid.Row="3" Text="?" VerticalOptions="CenterAndExpand" FontSize="36" TextColor="WhiteSmoke" BackgroundColor="SteelBlue"/>
 
-        <Label x:Name="timeDisplay" Grid.ColumnSpan="4"  HorizontalOptions="CenterAndExpand" Grid.Row="4" Text="????" VerticalOptions="CenterAndExpand" FontSize="36" />
+        <Button x:Name="timeDisplay" Grid.ColumnSpan="4"  HorizontalOptions="CenterAndExpand" Grid.Row="4" Text="????" VerticalOptions="CenterAndExpand" FontSize="36" IsEnabled="True" 
+                Pressed="OnButtonPressed"/>
     </Grid>
 </ContentPage>
